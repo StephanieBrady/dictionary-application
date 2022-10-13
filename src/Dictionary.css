@@ -1,0 +1,12 @@
+h1 {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+}
+
+.Dictionary {
+  display: block;
+  text-align: center;
+}
+.input-form {
+  width: 500px;
+}

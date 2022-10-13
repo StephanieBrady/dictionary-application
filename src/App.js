@@ -1,9 +1,18 @@
 import "./App.css";
-
+import Dictionary from "./Dictionary";
+import magpie from "./magpie.png";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Hello</header>
+      <div className="container">
+        <header className="App-header">
+          <img src={magpie} className="logo ps-5" alt="logo" />
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+      </div>
+      <footer className="footer">coded by Stephanie Brady</footer>
     </div>
   );
 }
