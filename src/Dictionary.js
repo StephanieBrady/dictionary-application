@@ -14,7 +14,7 @@ export default function Dictionary() {
       <h1 className="dictionary-header">Magpie dictionary</h1>
       <form onSubmit={search}>
         <input
-          className="input-form"
+          className="input-form mt-3"
           type="search"
           placeholder="What word would you like to information about?"
           onChange={handleKeywordChange}
