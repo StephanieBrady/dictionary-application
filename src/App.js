@@ -12,7 +12,13 @@ function App() {
           <Dictionary />
         </main>
       </div>
-      <footer className="footer">coded by Stephanie Brady</footer>
+      <footer className="footer">
+        This is an {""}
+        <a href="https://github.com/StephanieBrady/dictionary-application">
+          open-sourced {""}
+        </a>{" "}
+        code by Stephanie Brady <i className="fa-solid fa-feather-pointed"></i>
+      </footer>
     </div>
   );
 }
