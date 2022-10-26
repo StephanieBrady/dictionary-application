@@ -24,20 +24,25 @@ export default function Dictionary() {
   }
   return (
     <div className="Dictionary">
-      <h1 className="dictionary-header">Magpie dictionary</h1>
-      <form onSubmit={search}>
-        <input
-          className="input-form mt-3"
-          type="search"
-          placeholder="What word would you like to search for?"
-          onChange={handleKeywordChange}
-        />
-        <br />
-        <button type="button" className="btn btn-dark text-center mt-3">
-          search
-        </button>
-        <br />
-      </form>
+      <section>
+        <h1 className="dictionary-header mt-2">Magpie dictionary</h1>
+        <form onSubmit={search}>
+          <input
+            className="input-form mt-3"
+            type="search"
+            placeholder="What word would you like to search for?"
+            onChange={handleKeywordChange}
+          />
+          <br />
+          <button type="button" className="btn btn-dark text-center mt-3 mb-4">
+            search
+          </button>
+          <br />
+        </form>
+      </section>
+      <br />
+      <br />
+      <hr className="FormDivider"></hr>
       <Results results={results} />
     </div>
   );
