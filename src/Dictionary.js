@@ -29,7 +29,7 @@ export default function Dictionary() {
         <h1 className="dictionary-header mt-2">Magpie dictionary</h1>
         <form onSubmit={handleSubmit}>
           <input
-            className="input-form mt-3"
+            className="input-form mt-3 mb-2"
             type="search"
             placeholder=""
             onChange={handleKeywordChange}
