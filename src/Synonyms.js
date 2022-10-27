@@ -2,13 +2,21 @@ import React from "react";
 import "./Synonyms.css";
 
 export default function Synonyms(props) {
-  if (props.synonyms) {
+  console.log(props.synonyms.length);
+  if (props.synonyms.length !== 0) {
     return (
-      <ul className="Synonyms">
+      <span className="Synonyms">
         {props.synonyms.map(function (synonym, index) {
-          return <li key={index}>{synonym}</li>;
+          return (
+            <span
+              key={index}
+              className="list d-flex justify-content-start mt-0"
+            >
+              {synonym}{" "}
+            </span>
+          );
         })}
-      </ul>
+      </span>
     );
   } else {
     return null;

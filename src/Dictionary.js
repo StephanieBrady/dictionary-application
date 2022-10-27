@@ -39,7 +39,7 @@ export default function Dictionary() {
           <br />
           <button
             type="button"
-            className="btn btn-dark text-center mt-3 mb-4"
+            className="btn btn-dark text-center mt-3 "
             onClick={handleSubmit}
           >
             search
@@ -49,7 +49,7 @@ export default function Dictionary() {
       </section>
       <br />
       <br />
-      <hr className="FormDivider"></hr>
+
       <Results results={results} />
     </div>
   );

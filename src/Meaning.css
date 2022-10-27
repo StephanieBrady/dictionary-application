@@ -2,7 +2,6 @@
   font-weight: bold;
 }
 .Meaning .Example {
-  font-weight: bold;
   font-size: smaller;
   opacity: 0.7;
 }
@@ -10,7 +9,4 @@
   font-weight: bold;
   font-size: smaller;
   opacity: 0.7;
-}
-.Meaning {
-  line-height: 1cm;
 }
