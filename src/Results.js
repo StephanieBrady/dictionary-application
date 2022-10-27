@@ -6,11 +6,11 @@ import "./Results.css";
 export default function Results(props) {
   if (props.results) {
     return (
-      <div className="Results">
+      <div className="Results ">
         <br />
-        <section>
+        <section className="shadow p-3 mb-1 bg-body rounded">
           <h2>{props.results.word}</h2>
-          Phonetics:
+
           {props.results.phonetics
             .filter((phonetic) => phonetic.audio !== "")
             .map(function (phonetic, index) {

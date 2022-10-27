@@ -1,0 +1,10 @@
+.Meaning .PartofSpeech {
+  font-weight: bold;
+}
+.Meaning .Definition {
+  line-height: 1.5;
+  font-weight: thin;
+}
+.Meaning {
+  line-height: 1cm;
+}

@@ -10,13 +10,14 @@ export default function Dictionary() {
     console.log(response.data[0]);
     setResults(response.data[0]);
   }
-
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 
     axios.get(apiUrl).then(handleResponse);
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleKeywordChange(event) {
@@ -26,7 +27,7 @@ export default function Dictionary() {
     <div className="Dictionary">
       <section>
         <h1 className="dictionary-header mt-2">Magpie dictionary</h1>
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <input
             className="input-form mt-3"
             type="search"
@@ -34,7 +35,11 @@ export default function Dictionary() {
             onChange={handleKeywordChange}
           />
           <br />
-          <button type="button" className="btn btn-dark text-center mt-3 mb-4">
+          <button
+            type="button"
+            className="btn btn-dark text-center mt-3 mb-4"
+            onClick={handleSubmit}
+          >
             search
           </button>
           <br />
