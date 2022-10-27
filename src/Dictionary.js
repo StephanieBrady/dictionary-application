@@ -31,9 +31,11 @@ export default function Dictionary() {
           <input
             className="input-form mt-3"
             type="search"
-            placeholder="What word would you like to search for?"
+            placeholder=""
             onChange={handleKeywordChange}
           />
+          <br />
+          What word would you like to search for?
           <br />
           <button
             type="button"

@@ -1,9 +1,15 @@
 .Meaning .PartofSpeech {
   font-weight: bold;
 }
-.Meaning .Definition {
-  line-height: 1.5;
-  font-weight: thin;
+.Meaning .Example {
+  font-weight: bold;
+  font-size: smaller;
+  opacity: 0.7;
+}
+.Meaning .Synonym {
+  font-weight: bold;
+  font-size: smaller;
+  opacity: 0.7;
 }
 .Meaning {
   line-height: 1cm;
