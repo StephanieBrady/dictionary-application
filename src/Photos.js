@@ -6,7 +6,10 @@ export default function Photos(props) {
   if (props.photos) {
     return (
       <section className="Photos shadow p-3 mb-1 bg-body rounded">
+        {" "}
+        We've gathered these images for you for your search:
         <div className="row mt-3 ms-1 me-1">
+          {" "}
           {props.photos.map(function (photo, index) {
             return (
               <div className="col-4 mb-4 " key={index}>
