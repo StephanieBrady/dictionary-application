@@ -38,7 +38,7 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <section>
-        <h1 className="dictionary-header mt-2">Magpie dictionary</h1>
+        <h1 className="dictionary-header mt-2">Magpie Dictionary</h1>
         <form onSubmit={handleSubmit}>
           <input
             className="input-form mt-3 mb-2"
