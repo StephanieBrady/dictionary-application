@@ -22,7 +22,7 @@ export default function Meaning(props) {
               <br />
               <span className="Example">
                 <strong> Example: {""}</strong>
-                {definition.example}
+                <em>{definition.example}</em>
               </span>
               <br />
               <span className="Synonym">Synonyms: </span>

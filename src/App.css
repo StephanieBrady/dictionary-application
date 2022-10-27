@@ -15,3 +15,7 @@ a:hover {
   font-size: 17px;
   color: black;
 }
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
