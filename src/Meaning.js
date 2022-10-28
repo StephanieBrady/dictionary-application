@@ -10,7 +10,7 @@ export default function Meaning(props) {
       {props.meaning.definitions && (
         <div>
           {" "}
-          <span classname="Definition">
+          <span className="Definition">
             {props.meaning.definitions[0].definition}
           </span>
         </div>
@@ -19,14 +19,22 @@ export default function Meaning(props) {
         return (
           <div key={index}>
             <div>
-              <br />
-              <span className="Example">
-                <strong> Example: {""}</strong>
-                <em>{definition.example}</em>
-              </span>
-              <br />
-              <span className="Synonym">Synonyms: </span>
-              <Synonyms synonyms={definition.synonyms} />
+              {definition.example && (
+                <>
+                  <br />
+                  <span className="Example">
+                    <strong> Example: {""}</strong>
+                    <em>{definition.example}</em>
+                  </span>
+                </>
+              )}
+              {definition.synonyms?.length > 0 && (
+                <>
+                  <br />
+                  <span className="Synonym">Synonyms: </span>
+                  <Synonyms synonyms={definition.synonyms} />
+                </>
+              )}
             </div>
           </div>
         );
