@@ -17,7 +17,11 @@ function App() {
         <a href="https://github.com/StephanieBrady/dictionary-application">
           open-sourced {""}
         </a>{" "}
-        code by Stephanie Brady <i className="fa-solid fa-feather-pointed"></i>
+        code by Stephanie Brady and is hosted on{" "}
+        <a href="http://netlify.com" rel="noreferrer" target="_blank">
+          Netlify{" "}
+        </a>
+        <i className="fa-solid fa-feather-pointed"></i>
       </footer>
     </div>
   );
